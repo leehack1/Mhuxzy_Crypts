@@ -32,15 +32,29 @@
       padding: 20px;
       border-radius: 5px;
     }
-  #contact a {
-  margin: 0 12px;
-  font-size: 2rem;
+ #contact {
+  text-align: center;     /* center the whole section */
+  margin: 50px 0;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column; /* stack icons vertically */
+  align-items: center;    /* center horizontally */
+  gap: 20px;              /* spacing between icons */
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  font-size: 2.5rem;      /* icon size */
   color: #333;
   transition: color 0.3s;
- }
- #contact a:hover {
-  color: #0077cc;
- }
+}
+
+.contact-icons a:hover {
+  color: #0077cc;         /* hover effect */
+}
+
     footer {
       background: #222; 
       color: #fff; 
@@ -107,19 +121,32 @@
       </div>
     </div>
   </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mhuxzy001@gmail.com">mhuxzy001@gmail.com  <i class="fa-solid fa-envelope"></i></a> </p>
-    <p>Telegram: <a href="#">t.me/Xzitics <i class="fa-brands fa-telegram"></i> </a> </p>
-    <p>Twitter: <a href="#">https://x.com/mhuxzitics <i class="fa-brands fa-twitter"></i></a></p>
-    <p>Discord: <a href="#">https://discord.com/mhuxzy_crypt<i class="fa-brands fa-discord"></i></a></p>
-  </section>
-
+ <section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-icons">
+    <!-- Mail -->
+    <a href="mailto:mhuxzy001@gmail.com" target="_blank">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <!-- Telegram -->
+    <a href="https://t.me/Xzitics" target="_blank">
+      <i class="fa-brands fa-telegram"></i>
+    </a>
+    <!-- Twitter -->
+    <a href="https://x.com/mhuxzitics" target="_blank">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <!-- Discord -->
+    <a href="https://discord.com/users/mhuxzy_crypt" target="_blank">
+      <i class="fa-brands fa-discord"></i>
+    </a>
+  </div>
+</section>
   <footer>
     <p>&copy;Mhuxzy_Crypts</p>
   </footer>
 </body>
 </html>
+
 
 
